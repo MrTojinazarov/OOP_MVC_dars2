@@ -7,7 +7,7 @@ class Database
     public static $host = 'localhost';
     public static $username = 'root';
     public static $password = 'mr2344';
-    public static $dbname = 'imtixon';
+    public static $dbname = 'dars14';
 
     public static function connect()
     {
