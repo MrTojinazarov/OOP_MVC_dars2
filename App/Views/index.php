@@ -1,0 +1,1 @@
+<h1>Index coontroller sahifa</h1>

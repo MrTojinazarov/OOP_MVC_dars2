@@ -2,15 +2,18 @@
 
 namespace App\Controllers;
 
-class CategoryControllers
-{
+use App\Helpers\Views;
 
-    public function index()
-    {
-        $models = Categorys::all();
-        return view('index', 'home', $models);
+class CategoryController{
+    public function index(){
+        return view('index' , 'Bosh sahifa');
     }
 
+    public function about(){
+        return view('about' , 'About sahifa');
+    }    
+    public function contact(){
+        return view('contact' , 'Contact sahifa');
+        
+    }
 }
-
-?>
