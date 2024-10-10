@@ -21,7 +21,7 @@
                     <td>
                         <form action="updateProduct" method="POST">
                             <input type="hidden" name="id" value="<?= $model->id?>">
-                            <a name="ok" class="btn btn-primary">Update</a>
+                            <button name="ok" type="submit" class="btn btn-primary">Update</button>
                         </form>
                         <form action="deleteProduct" method="POST">
                             <input type="hidden" name="id" value="<?= $model->id?>">

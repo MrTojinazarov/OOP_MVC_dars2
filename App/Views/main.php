@@ -13,7 +13,6 @@
         <ul>
             <li><a href="/">Bosh sahifa</a></li>
             <li><a href="/about">about sahifa</a></li>
-            <li><a href="/contact">Contact sahifa</a></li>
         </ul>
 
         <?= $content ?>

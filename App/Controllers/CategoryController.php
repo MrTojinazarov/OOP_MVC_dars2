@@ -13,10 +13,6 @@ class CategoryController{
     public function about(){
         return view('about' , 'About sahifa');
     }    
-    public function contact(){
-        return view('contact' , 'Contact sahifa');
-        
-    }
 
     public function create()
     {
@@ -42,8 +38,33 @@ class CategoryController{
         }
     }
 
+
+
     public function productAddView()
     {
         return view('add_model', 'Add product');
+    }
+
+    public function updateProduct()
+    {
+        
+        $data = Product::getProductByID($_POST['id']);
+        
+        return view('update', 'Update Sahifa', $data);
+    }
+
+    public function saveUpdateProduct()
+    {
+        if(isset($_POST['ok'])){
+            $id = $_POST['id'];
+            $data = [
+                'name' => $_POST['name'],
+                'price' => $_POST['price'],
+                'count' => $_POST['count']
+            ];
+
+            Product::update($data, $id);
+            header('location: /');
+        }
     }
 }
